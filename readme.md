@@ -16,7 +16,7 @@ The Mobile Phone is live [here](https://babzt.github.io/iPhone13/)
 - Visual Studio Code as a Tool.
 
 ## :camera_flash:Screenshot
-![](iphone13.png)
+![](iPhone13.png)
 
 ## Don't forget to drop a star and follow me:thumbsup:
 
