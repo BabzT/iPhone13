@@ -189,3 +189,89 @@ section{
      color: grey;
  }
 
+ .section2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.appbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    height: 100%;
+}
+
+.iconbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: green;
+    width: 95%;
+    height: 70%;
+}
+
+.video{
+    font-size: 30px;
+}
+
+.apptext{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.iconbox2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 95%;
+    height: 70%;
+}
+
+.sec2day{
+    color: red;
+    font-weight: bold;
+}
+
+.sec2date{
+    color: black;
+    font-weight: bold;
+}
+
+.iconbox3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(168, 167, 167);
+    width: 95%;
+    height: 70%;
+}
+
+.camera{
+    font-size: 35px;
+    color: black;
+}
+
+.iconbox4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: linear-gradient(blue, lightblue);
+    width: 95%;
+    height: 70%;
+}
+
+.cloud{
+    font-size: 30px;
+    color: white;
+}
