@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/cefa489f50.js' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="updateScreen()">
     <section>
         <div class="silent"></div>
         <div class="volumeup"></div>
@@ -22,7 +23,7 @@
         <div class="secondborder">
             
             <div class="topdiv">
-                <p class="time">5:22</p>
+                <p class="time">5:22 PM</p>
                 <div class="topnotch"></div>
                 <div class="sideright">
                     <i class="fas fa-circle dot"></i>
@@ -48,7 +49,7 @@
                         <p class="date">21</p>
                         <p class="events">No more events today</p>
                     </div>
-                    <p class="weather">Calender</p>
+                    <p class="weather">Calendar</p>
                 </div>
             </div>
             <div class="section2">
@@ -101,7 +102,7 @@
                 <div class="appbox">
                     <div class="iconbox4">
                         <div class="mail">
-                            <p>2,416</p>
+                            <p id="mailcount">0</p>
                         </div>
                         <i class="fas fa-envelope cloud"></i>
                     </div>
@@ -125,7 +126,7 @@
                 </div>
                 <div class="appbox">
                     <div class="message">
-                        <p>16</p>
+                        <p id="messagecount">0</p>
                     </div>
                     <div class="iconbox8">
                         <i class='fas fa-comment video'></i>
@@ -140,5 +141,25 @@
         </div>
     </div>
 </section>
+<script>
+   let updateScreen = () => {
+    document.querySelector("#mailcount").innerText = generateRandomCount(3000);
+    document.querySelector("#messagecount").innerText = generateRandomCount(200);
+    updateDate();   
+}
+    let generateRandomCount = (n) => {
+    let count = Math.round(Math.random() * n);
+    return count;
+}
+let updateDate = () => {
+    let d = new Date();
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"];
+    document.querySelector(".day").innerText = days[d.getDay()].toUpperCase()
+    document.querySelector(".date").innerText = d.getDate()
+    document.querySelector(".sec2day").innerText = days[d.getDay()].toUpperCase().slice(0,3);
+    document.querySelector(".sec2date").innerText = d.getDate()
+}
+
+</script>
 </body>
 </html>
